@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Дитячий садок 'KIDS’ UNI' - потужна освітня програма, безпека та кваліфіковані працівники. Запишіть свою дитину сьогодні!">
+    <title>KIDS' UNI - Дитячий садок</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        * {
+            font-family: "Montserrat", serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section {
+            height: 100vh;
+            scroll-snap-align: start;
+            margin: 10% 0 10% 0;
+        }
+        body {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- Header Section -->
+<header id="header" class="bg-[#00A651] text-white h-screen flex items-center">
+    <!-- Соціальні мережі -->
+    <div class="absolute top-4 left-1/2 transform -translate-x-1/2 flex space-x-6 mb-4 sm:mb-6">
+        <a href="https://www.instagram.com/your-profile" target="_blank" class="text-white hover:text-[#FFF621]">
+            <i class="fab fa-instagram text-2xl sm:text-3xl"></i>
+        </a>
+        <a href="https://www.facebook.com/your-profile" target="_blank" class="text-white hover:text-[#FFF621]">
+            <i class="fab fa-facebook-f text-2xl sm:text-3xl"></i>
+        </a>
+    </div>
+
+    <div class="container mx-auto flex flex-col justify-center items-center text-center" data-aos="fade-down">
+        <!-- Заголовок і навігація -->
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4" data-aos="fade-up" data-aos-delay="100">KIDS’ UNI</h1>
+        <p class="text-lg sm:text-xl mb-8" data-aos="fade-up" data-aos-delay="200">Найкращий дитячий садок для вашої дитини</p>
+        
+        <nav>
+            <ul class="flex space-x-6 sm:space-x-8 flex-wrap justify-center" data-aos="fade-up" data-aos-delay="300">
+                <li><a href="#about" class="text-lg sm:text-xl hover:text-[#FFF621]">Про нас</a></li>
+                <li><a href="#program" class="text-lg sm:text-xl hover:text-[#FFF621]">Програма</a></li>
+                <li><a href="#faq" class="text-lg sm:text-xl hover:text-[#FFF621]">Питання та відповіді</a></li>
+                <li><a href="#contact" class="text-lg sm:text-xl hover:text-[#FFF621]">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="h-screen py-16 flex items-center" >
+        <div class="container mx-auto text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-semibold text-[#00A651] animate__animated animate__fadeInDown">
+                Чому варто обрати "KIDS’ UNI"
+            </h2>
+            <p class="mt-4 text-lg font-medium text-gray-800" data-aos="fade-up" data-aos-delay="100">
+                Дитячий садок «KIDS’ UNI» є дійсним членом Всеукраїнського об'єднання приватних дитячих закладів.
+            </p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Потужна освітня програма -->
+                <div class="bg-white p-6 rounded-lg text-left transition-shadow hover:shadow-[0_4px_200px_rgba(255,246,33,0.5)] hover:scale-105 transform" 
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#00A651] text-white w-12 h-12 flex items-center justify-center rounded-full">
+                            <i class="fas fa-graduation-cap text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold ml-4">Потужна освітня програма</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Заняття в садочку — це вдале поєднання наших найкращих напрацювань та авторських методик, які дають найкращі результати у навчанні.
+                    </p>
+                </div>
+                <!-- Малокомплектні групи -->
+                <div class="bg-white p-6 rounded-lg text-left transition-shadow hover:shadow-[0_4px_200px_rgba(255,246,33,0.5)] hover:scale-105 transform" 
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#00A651] text-white w-12 h-12 flex items-center justify-center rounded-full">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold ml-4">Малокомплектні групи</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Групи до 12 діток з урахуванням вікових особливостей. Це дозволяє індивідуальний підхід до кожної дитини.
+                    </p>
+                </div>
+                <!-- Безпека -->
+                <div class="bg-white p-6 rounded-lg text-left transition-shadow hover:shadow-[0_4px_200px_rgba(255,246,33,0.5)] hover:scale-105 transform" 
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#00A651] text-white w-12 h-12 flex items-center justify-center rounded-full">
+                            <i class="fas fa-shield-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold ml-4">Безпека</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Заклад оснащений системою відеоспостереження та бактерицидними рециркуляторами для захисту дітей.
+                    </p>
+                </div>
+                <!-- Кваліфіковані працівники -->
+                <div class="bg-white p-6 rounded-lg text-left transition-shadow hover:shadow-[0_4px_200px_rgba(255,246,33,0.5)] hover:scale-105 transform" 
+                    data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#00A651] text-white w-12 h-12 flex items-center justify-center rounded-full">
+                            <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold ml-4">Кваліфіковані працівники</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Наші вихователі мають великий педагогічний досвід і регулярно проходять курси підвищення кваліфікації.
+                    </p>
+                </div>
+                <!-- Зручний графік -->
+                <div class="bg-white p-6 rounded-lg text-left transition-shadow hover:shadow-[0_4px_200px_rgba(255,246,33,0.5)] hover:scale-105 transform" 
+                    data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#00A651] text-white w-12 h-12 flex items-center justify-center rounded-full">
+                            <i class="fas fa-clock text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold ml-4">Зручний графік</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Ми пропонуємо різні варіанти режиму перебування дітей, щоб батьки могли обрати зручний для себе графік.
+                    </p>
+                </div>
+                <!-- Зручне розташування -->
+                <div class="bg-white p-6 rounded-lg text-left transition-shadow hover:shadow-[0_4px_200px_rgba(255,246,33,0.5)] hover:scale-105 transform" 
+                    data-aos="fade-up" data-aos-delay="700">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-[#00A651] text-white w-12 h-12 flex items-center justify-center rounded-full">
+                            <i class="fas fa-map-marker-alt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold ml-4">Зручне розташування</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        Садочок знаходиться у центрі міста. Легкий доступ як автомобілем, так і громадським транспортом.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Program Section -->
+    <section id="program" class="py-16 h-screen bg-gray-50" data-aos="fade-left">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-[#FF3131] mb-6">Наша програма</h2>
+            <div class="mt-6 text-lg text-gray-700">
+                <p class="mb-10">
+                    Наш садок пропонує спеціальні програми для різних вікових груп, що включають 
+                    ранній розвиток, мову, фізичну активність, та багато іншого.
+                </p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="p-8 shadow-lg border-2 border-[#00A651] rounded-xl bg-white transition-all duration-300 hover:scale-105 hover:border-[#FF3131] hover:shadow-2xl" data-aos="zoom-in">
+                        <h3 class="text-xl font-semibold text-[#00A651] mb-4 transition-colors duration-300 hover:text-[#FF3131]">Молодша група</h3>
+                        <p class="text-gray-600">Заняття з раннього розвитку, музика, мова та фізичні вправи.</p>
+                    </div>
+                    <div class="p-8 shadow-lg border-2 border-[#00A651] rounded-xl bg-white transition-all duration-300 hover:scale-105 hover:border-[#FF3131] hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
+                        <h3 class="text-xl font-semibold text-[#00A651] mb-4 transition-colors duration-300 hover:text-[#FF3131]">Середня група</h3>
+                        <p class="text-gray-600">Логіко-математичний розвиток, музика, англійська мова з 3 років.</p>
+                    </div>
+                    <div class="p-8 shadow-lg border-2 border-[#00A651] rounded-xl bg-white transition-all duration-300 hover:scale-105 hover:border-[#FF3131] hover:shadow-2xl" data-aos="zoom-in" data-aos-delay="200">
+                        <h3 class="text-xl font-semibold text-[#00A651] mb-4 transition-colors duration-300 hover:text-[#FF3131]">Підготовча група</h3>
+                        <p class="text-gray-600">Підготовка до школи, ІТ, емоційний інтелект, фінансова грамотність.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-[#FFF621]" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-[#FF3131]">Питання та відповіді</h2>
+            <div class="mt-8">
+                <div class="accordion">
+                    <div class="accordion-item mb-4">
+                        <button class="w-full text-left bg-[#00A651] text-white py-4 px-6" onclick="toggleAccordion(this)">Чи достатньо діти гуляють на вулиці?</button>
+                        <div class="accordion-item-content bg-white p-4">
+                            <p>За розкладом у всіх дітей 3 години прогулянок. Ми гуляємо практично за будь-якої погоди.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-4">
+                        <button class="w-full text-left bg-[#00A651] text-white py-4 px-6" onclick="toggleAccordion(this)">Яке харчування у дітей?</button>
+                        <div class="accordion-item-content bg-white p-4">
+                            <p>Протягом дня діти отримують пʼятиразове збалансоване харчування. Щоденно в меню є фрукти і овочі по сезону.</p>
+                        </div>
+                    </div>
+                    <!-- Add more questions here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16" data-aos="fade-right">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-semibold text-[#00A651]">Контакти</h2>
+            <p class="mt-4 text-lg">Ми знаходимося за адресою: м.Калуш, проспект Лесі Українки, 27а. До нас легко дістатись як власним автомобілем, так і громадським транспортом.</p>
+            <p class="mt-4 text-lg">Зателефонуйте нам за номером: <strong>(+380) 123-456-789</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#00A651] text-white py-4" data-aos="fade-up">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 KIDS' UNI. Усі права захищені.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            content.classList.toggle('active');
+        }
+    </script>
+    
+    <script>
+        AOS.init({
+            duration: 1000,  // Time for animation to complete
+            easing: 'ease-in-out', // Animation easing function
+            once: false, // Animation happens only once
+        });
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+    </script>
+</body>
+</html>

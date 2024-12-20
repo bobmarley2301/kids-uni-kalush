@@ -1,0 +1,81 @@
+/* Зробити секції адаптивними */
+section {
+    height: auto; /* Встановлюємо висоту автоматично для адаптивності */
+    padding: 4rem 0; /* Відступи зверху і знизу */
+}
+
+/* Забезпечуємо правильне вирівнювання для мобільних пристроїв */
+body {
+    scroll-snap-type: none; /* Вимикаємо скролінг по секціях на мобільних */
+    overflow-y: auto; /* Додаємо прокрутку */
+}
+
+/* Адаптація для маленьких екранів */
+@media (max-width: 768px) {
+    /* Зменшуємо розмір тексту в заголовках та меню */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .text-lg {
+        font-size: 1rem;
+    }
+
+    .text-xl {
+        font-size: 1.25rem;
+    }
+
+    /* Підлаштовуємо меню */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 1rem;
+    }
+
+    /* Встановлюємо картки програми в одну колонку */
+    .grid {
+        grid-template-columns: 1fr; /* Одна колонка */
+    }
+
+    /* Адаптація карток */
+    .p-8 {
+        padding: 2rem;
+    }
+
+    .accordion-item button {
+        font-size: 1rem; /* Зменшуємо розмір шрифта */
+    }
+
+    .accordion-item-content {
+        padding: 2rem;
+    }
+}
+
+/* Для дуже малих екранів */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .text-lg {
+        font-size: 0.875rem;
+    }
+
+    .text-xl {
+        font-size: 1.125rem;
+    }
+}
