@@ -1,78 +1,52 @@
-/* Зробити секції адаптивними */
+/* Встановлюємо відступи для кожної секції */
 section {
-    height: auto; /* Встановлюємо висоту автоматично для адаптивності */
     padding: 4rem 0; /* Відступи зверху і знизу */
+    min-height: 100vh; /* Мінімальна висота секції 100% екрану */
+    scroll-snap-align: start; /* Вирівнюємо секції при скролінгу */
 }
 
-/* Забезпечуємо правильне вирівнювання для мобільних пристроїв */
-body {
-    scroll-snap-type: none; /* Вимикаємо скролінг по секціях на мобільних */
-    overflow-y: auto; /* Додаємо прокрутку */
-}
-
-/* Адаптація для маленьких екранів */
+/* Адаптивність для мобільних пристроїв */
 @media (max-width: 768px) {
-    /* Зменшуємо розмір тексту в заголовках та меню */
-    h1 {
-        font-size: 2.5rem;
+    /* Секції на мобільних пристроях */
+    section {
+        padding: 2rem 0; /* Зменшуємо відступи для мобільних */
+        min-height: auto; /* Мінімальна висота автоматична */
     }
 
-    h2 {
-        font-size: 2rem;
+    /* Відступи між секціями */
+    header, section, footer {
+        margin-bottom: 2rem; /* Відступи між секціями */
     }
 
-    .text-lg {
-        font-size: 1rem;
-    }
-
-    .text-xl {
-        font-size: 1.25rem;
-    }
-
-    /* Підлаштовуємо меню */
+    /* Встановлюємо меню вертикальним на мобільних пристроях */
     nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     nav li {
-        margin-bottom: 1rem;
-    }
-
-    /* Встановлюємо картки програми в одну колонку */
-    .grid {
-        grid-template-columns: 1fr; /* Одна колонка */
-    }
-
-    /* Адаптація карток */
-    .p-8 {
-        padding: 2rem;
-    }
-
-    .accordion-item button {
-        font-size: 1rem; /* Зменшуємо розмір шрифта */
-    }
-
-    .accordion-item-content {
-        padding: 2rem;
+        margin-bottom: 1rem; /* Відступи між пунктами меню */
     }
 }
 
 /* Для дуже малих екранів */
 @media (max-width: 480px) {
+    /* Додаємо відступи до контейнерів */
     .container {
-        padding: 0 1rem;
+        padding: 0 1rem; /* Відступи по боках */
     }
 
+    /* Зменшуємо розмір шрифтів для маленьких екранів */
     h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
         font-size: 1.75rem;
     }
 
+    h2 {
+        font-size: 1.5rem;
+    }
+
     .text-lg {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     .text-xl {
