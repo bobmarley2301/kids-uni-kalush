@@ -1,11 +1,48 @@
-CSS клас для фону білий
+
 .nav-colored {
     background-color: #FFFFFF;
     
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 /* CSS клас для фону зелений */
 .nav-transparent {
     background-color: #00A651;
     color:white
 }
+
+.accordion-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+section {
+    margin-bottom: 10%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #FF3131;
+   
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #b90000;
+}
+
+#mobile-menu.active {
+    transform: translateY(0);
+  }
+  
+  #menu-toggle svg {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #menu-toggle.active svg {
+    transform: rotate(90deg);
+  }
+  
+
+  

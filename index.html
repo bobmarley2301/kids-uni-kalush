@@ -16,7 +16,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- Custom Styles -->
+     <link rel="stylesheet" href="main.css">
     <style>
         body {
             font-family: "Montserrat", sans-serif;
@@ -28,43 +32,45 @@
 </head>
 <body>
     <!-- Header -->
-  <header id="nav" class="fixed bg-white shadow-md top-0 z-50 w-full">
-    <div class="container mx-auto px-4 flex justify-between items-center py-4">
+    <header id="nav" class="fixed bg-white shadow-md top-0 z-50 w-full">
+        <div class="container mx-auto px-6 lg:px-10 flex justify-between items-center py-4">
         <!-- Logo -->
         <a href="#" class="text-2xl font-bold text-green-600">KIDS’ UNI</a>
-
+    
         <!-- Navigation Menu (Desktop) -->
-        <nav class="hidden md:flex space-x-6">
-            <a href="#about" class="text-gray-700 hover:text-green-600 transition">Про нас</a>
-            <a href="#programs" class="text-gray-700 hover:text-green-600 transition">Програми</a>
-            <a href="#advantages" class="text-gray-700 hover:text-green-600 transition">Переваги</a>
-            <a href="#faq" class="text-gray-700 hover:text-green-600 transition">Питання та відповіді</a>
-            <a href="#contacts" class="text-gray-700 hover:text-green-600 transition">Контакти</a>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#about" class="text-gray-800 hover:text-green-600 font-medium transition">Про нас</a>
+            <a href="#programs" class="text-gray-800 hover:text-green-600 font-medium transition">Програми</a>
+            <a href="#advantages" class="text-gray-800 hover:text-green-600 font-medium transition">Переваги</a>
+            <a href="#faq" class="text-gray-800 hover:text-green-600 font-medium transition">Питання та відповіді</a>
+            <a href="#contacts" class="text-gray-800 hover:text-green-600 font-medium transition">Контакти</a>
         </nav>
-
+    
         <!-- Mobile Menu Button -->
         <button 
             id="menu-toggle" 
-            class="md:hidden text-gray-700 focus:outline-none" 
+            class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-600 rounded"
             aria-label="Toggle navigation menu"
         >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
-    </div>
-
-    <!-- Mobile Navigation Menu -->
-    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
-        <nav class="flex flex-col space-y-4 py-4 px-4">
-            <a href="#about" class="text-gray-700 hover:text-green-600 transition">Про нас</a>
-            <a href="#programs" class="text-gray-700 hover:text-green-600 transition">Програми</a>
-            <a href="#advantages" class="text-gray-700 hover:text-green-600 transition">Переваги</a>
-            <a href="#faq" class="text-gray-700 hover:text-green-600 transition">Питання та відповіді</a>
-            <a href="#contacts" class="text-gray-700 hover:text-green-600 transition">Контакти</a>
+        </div>
+    
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg transition-transform transform translate-y-[-100%]">
+        <nav class="flex flex-col space-y-4 py-4 px-6">
+            <a href="#about" class="text-gray-800 hover:text-green-600 font-medium transition">Про нас</a>
+            <a href="#programs" class="text-gray-800 hover:text-green-600 font-medium transition">Програми</a>
+            <a href="#advantages" class="text-gray-800 hover:text-green-600 font-medium transition">Переваги</a>
+            <a href="#faq" class="text-gray-800 hover:text-green-600 font-medium transition">Питання та відповіді</a>
+            <a href="#contacts" class="text-gray-800 hover:text-green-600 font-medium transition">Контакти</a>
         </nav>
-    </div>
-  </header>
+        </div>
+    </header>
+    
+  
 
     <!-- Hero Section -->
     <section class="flex justify-center items-center bg-green-600 text-white py-20 h-[100vh]">
@@ -76,57 +82,79 @@
     </section>
 
     <!-- Advantages Section -->
-  <section id="advantages" class="py-20 bg-gray-100 text-black">
-      <div class="container mx-auto px-4">
-          <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up" data-aos-duration="800">
-              Наші переваги
-          </h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              <!-- Card 1 -->
-              <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="800">
-                  <i class="fas fa-book text-green-600 text-4xl mb-4 animate__animated animate__fadeIn"></i>
-                  <h3 class="text-xl font-semibold mb-2">Потужна освітня програма</h3>
-                  <p>Якісна та продумана програма для всебічного розвитку дитини.</p>
-              </div>
-              <!-- Card 2 -->
-              <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="900">
-                  <i class="fas fa-users text-yellow-400 text-4xl mb-4 animate__animated animate__fadeIn"></i>
-                  <h3 class="text-xl font-semibold mb-2">Малокомплектні групи</h3>
-                  <p>Індивідуальний підхід завдяки невеликій кількості учасників у групах.</p>
-              </div>
-              <!-- Card 3 -->
-              <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1000">
-                  <i class="fas fa-shield-alt text-red-500 text-4xl mb-4 animate__animated animate__fadeIn"></i>
-                  <h3 class="text-xl font-semibold mb-2">Безпека</h3>
-                  <p>Ми дбаємо про комфорт та безпеку ваших дітей.</p>
-              </div>
-              <!-- Card 4 -->
-              <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1100">
-                  <i class="fas fa-user-tie text-green-600 text-4xl mb-4 animate__animated animate__fadeIn"></i>
-                  <h3 class="text-xl font-semibold mb-2">Кваліфіковані працівники</h3>
-                  <p>Наші викладачі мають великий досвід роботи з дітьми.</p>
-              </div>
-              <!-- Card 5 -->
-              <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1200">
-                  <i class="fas fa-clock text-yellow-400 text-4xl mb-4 animate__animated animate__fadeIn"></i>
-                  <h3 class="text-xl font-semibold mb-2">Зручний графік</h3>
-                  <p>Гнучкий розклад, який можна адаптувати під потреби родини.</p>
-              </div>
-              <!-- Card 6 -->
-              <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1300">
-                  <i class="fas fa-wallet text-red-500 text-4xl mb-4 animate__animated animate__fadeIn"></i>
-                  <h3 class="text-xl font-semibold mb-2">Фінансова лояльність</h3>
-                  <p>Доступні ціни та програми лояльності для наших клієнтів.</p>
-              </div>
-              <!-- Card 7 -->
-              <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1400">
-                  <i class="fas fa-map-marker-alt text-green-600 text-4xl mb-4 animate__animated animate__fadeIn"></i>
-                  <h3 class="text-xl font-semibold mb-2">Зручне розташування</h3>
-                  <p>Наші локації легко знайти та зручно відвідувати.</p>
-              </div>
-          </div>
-      </div>
-  </section>
+<section id="advantages" class="py-20 bg-gray-100 text-black">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-8" data-aos="fade-up" data-aos-duration="800">
+            Наші переваги
+        </h2>
+        <div class="flex justify-center items-center mb-12" data-aos="fade-up" data-aos-duration="900">
+            <i class="fas fa-award text-green-600 text-4xl mr-4"></i>
+            <p class="text-center text-lg font-medium text-gray-700 max-w-3xl">
+                Дитячий садок «KIDS’ UNI» є дійсним членом <span class="font-bold text-green-600">
+                Всеукраїнського об'єднання приватних дитячих закладів</span>.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="800">
+                <i class="fas fa-book text-green-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Потужна освітня програма</h3>
+                <p class="text-gray-600">Якісна та продумана програма для всебічного розвитку дитини.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="900">
+                <i class="fas fa-users text-yellow-400 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Малокомплектні групи</h3>
+                <p class="text-gray-600">Індивідуальний підхід завдяки невеликій кількості учасників у групах.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1000">
+                <i class="fas fa-shield-alt text-red-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Безпека</h3>
+                <p class="text-gray-600">Ми дбаємо про комфорт та безпеку ваших дітей.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1100">
+                <i class="fas fa-user-tie text-green-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Кваліфіковані працівники</h3>
+                <p class="text-gray-600">Наші викладачі мають великий досвід роботи з дітьми.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1200">
+                <i class="fas fa-clock text-yellow-400 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Зручний графік</h3>
+                <p class="text-gray-600">Гнучкий розклад, який можна адаптувати під потреби родини.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1300">
+                <i class="fas fa-wallet text-red-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Фінансова лояльність</h3>
+                <p class="text-gray-600">Доступні ціни та програми лояльності для наших клієнтів.</p>
+            </div>
+        </div>
+        <div class="mt-12">
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center" data-aos="fade-up" data-aos-duration="1400">
+                <i class="fas fa-map-marker-alt text-green-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Зручне розташування</h3>
+                <p class="text-gray-600 mb-4">Наші локації легко знайти та зручно відвідувати.</p>
+                <div class="rounded-lg overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2616.1348350816816!2d24.3618992!3d49.0270425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730a2578f2fffff%3A0xf6b947edaa88fec1!2z0L_RgNC-0YHQv9C10LrRgiDQm9C10YHRliDQo9C60YDQsNGX0L3QutC4LCAyN9CwLCDQmtCw0LvRg9GILCDQhtCy0LDQvdC-LdCk0YDQsNC90LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc3MzAw!5e0!3m2!1suk!2sua!4v1735404838534!5m2!1suk!2sua" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
   <!-- Programs Section -->
   <section id="programs" class="py-20 bg-white text-black">
@@ -160,22 +188,422 @@
     </div>
   </section>
 
+  <!-- Question Section -->
+<section id="faq" class="py-20 bg-gray-100 text-black" data-aos="fade-up" data-aos-duration="800">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up" data-aos-duration="800">
+            Питання та відповіді
+        </h2>
+        <div class="max-w-3xl mx-auto space-y-4">
+            <!-- Accordion Item 1 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Розкажіть про навчальну програму для дітей молодшої групи.
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    В нас дуже насичена і цікава програма. Працюємо ми за нашими авторськими курсами. У дітей цього віку є заняття з раннього розвитку по методиці Макото Шичиди, яка спрямована на розвиток правої півкулі (фотографічна памʼять, увага, розвиток математичних та музичних здібностей, схильність до вивчення мов), бебі-фітнес, розвиток мовлення, музично-ритмічна діяльність.
+                </div>
+            </div>
+            <!-- Accordion Item 2 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Яка програма для дітей середньої групи?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Працюємо ми за нашими авторськими курсами. Крім загального розвитку (логіко-математичного спрямування) є розвиток мовлення, музично-ритмічна діяльність, хореографія. Також у дітей поглиблене вивчення англійської мови вже з 3 років.
+                </div>
+            </div>
+            <!-- Accordion Item 3 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Розкажіть детальніше про заняття у діток підготовчої групи.
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Працюємо ми за нашими авторськими курсами. Крім потужної підготовки до школи, у дітей є нейрофітнес, логіка, фінансова грамотність, курс ІТ, емоційний інтелект, акторська майстерність, хореографія. Також у дітей поглиблене вивчення англійської мови вже з 3 років.
+                </div>
+            </div>
+            <!-- Accordion Item 4 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Чи достатньо діти гуляють на вулиці?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    За розкладом у всіх дітей 3 години прогулянок. Ми гуляємо практично за будь-якої погоди.
+                </div>
+            </div>
+            <!-- Accordion Item 5 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Яке харчування у дітей?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Протягом дня діти отримують пʼятиразове збалансоване харчування. Щоденно в меню є фрукти і овочі по сезону.
+                </div>
+            </div>
+            <!-- Accordion Item 6 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Чи є в садочку денний відпочинок?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    У дітей всіх вікових категорій є денний відпочинок. Кімнати обладнані ліжечками Монтессорі, на яких дітям зручно спати. Вони низькі і легкі, тому діти можуть самостійно лягати і вставати.
+                </div>
+            </div>
+            <!-- Accordion Item 7 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Чи кваліфікований персонал у закладі?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Всі працівники мають відповідну педагогічну освіту і досвід роботи. Крім того, процес контролюється методистом.
+                </div>
+            </div>
+            <!-- Accordion Item 8 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Як батьки можуть побачити результати навчання дитини?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    В нашому закладі запроваджена система діагностики навчання, розвитку і відповідності віковим нормам дитини тричі на рік. Результати діагностики з поясненнями передаються батькам. Також батьки можуть отримувати інформацію щодня від вихователя або методиста.
+                </div>
+            </div>
+            <!-- Accordion Item 9 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Який режим роботи?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Заклад працює з 8:30 до 18:30. Діти можуть бути з нами пів дня до 13:30 або повний день до 18:30.
+                </div>
+            </div>
+            <!-- Accordion Item 10 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Розкажіть детальніше про розклад дня.
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Зранку обов’язкова ранкова зарядка і ранкове коло для налаштування на роботу. Щоденно у дітей 5 занять по 30 хвилин, 3 години прогулянок, денний відпочинок (2-3 години) і пʼятиразове харчування.
+                </div>
+            </div>
+            <!-- Accordion Item 11 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Як забезпечується безпека дітей?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Всі приміщення, оснащені системою відеоспостереження 
+                    Іграшки, меблі ергономічні і безпечні для дітей 
+                    Групи обладнані бактерицидними рециркуляторами
+                    Проводиться щоденне вологе прибирання 
+                    Щотижня всі іграшки миються дезінфікуючими засобами 
+                    Весь персонал має санітарні книжки і регулярно проходить медичний огляд
+                    Проводяться всі заходи згідно санітарного регламенту.
+                </div>
+            </div>
+            <!-- Accordion Item 12 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Де ви знаходитесь і як до вас дістатись?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Ми знаходимось в центрі міста за адресою проспект Лесі Українки,17 
+До нас зручно дістатись як громадським транспортом, так і автомобілем. Біля нас є парковка.
+                </div>
+            </div>
+            <!-- Accordion Item 13 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Яка вартість абонементу в садочок?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Ми підготували для батьків декілька пропозицій від 4100 грн. Можемо запропонувати відвідування щоденно з понеділка по пʼятницю повний день або до обіду. Також є варіант, який підійде батькам, що не розглядають щоденне відвідування, це три рази на тиждень , всього 14 днів на місяць.
+                </div>
+            </div>
+            <!-- Accordion Item 14 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Чи є адаптаційний період, чи потрібно одразу купувати абонемент?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Так, на період адаптації ми пропонуємо тижневий абонемент по спеціальній вартості. 
+                </div>
+            </div>
+            <!-- Accordion Item 15 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Моя дитина погано говорить?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Багато уваги ми приділяємо розвитку мовлення. В розкладі на кожен вік є відповідний курс.
+Крім того в нашому закладі працює досвідчений логопед-дефектолог , який додатково, за потреби, в той час коли дитина в садочку, займається з дітьми. Для наших вихованців діє спеціальна ціна. Це суттєва економія часу для працюючих батьків.
+                </div>
+            </div>
+            <!-- Accordion Item 16 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    З якого віку ви приймаєте дітей?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Ми працюємо з дітками з 1,5 року.
+                </div>
+            </div>
+            <!-- Accordion Item 17 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Моя дитина ще в памперсі, ви приймаєте таких?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Так, наші помічники дбайливо проконтролюють і поміняють памперс дитині. І відповідно будемо разом з батьками вчити користуватись горщиком.
+                </div>
+            </div>
+            <!-- Accordion Item 18 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Чи вивчається в садочку іноземна мова?
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Так, у діток з 3х років є вивчення англійської мови.
+                </div>
+            </div>
+            <!-- Accordion Item 19 -->
+            <div class="border rounded-lg overflow-hidden">
+                <button class="w-full text-left p-4 bg-white text-gray-700 font-semibold hover:bg-gray-50 flex justify-between items-center" onclick="toggleAccordion(this)">
+                    Як проходять заняття? 
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content p-4 bg-gray-50 text-gray-600 hidden">
+                    Всі заняття проходять в ігровій формі
+                    Багато уваги приділяємо нейровправам, що позитивно впливає на результат навчання.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="testimonials" class="py-20 bg-gray-100 text-black" data-aos="fade-up" data-aos-duration="800">
+      <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up" data-aos-duration="800">
+              Відгуки наших клієнтів
+          </h2>
+
+          <!-- Swiper Container -->
+          <div class="swiper-container" data-aos="fade-up" data-aos-duration="900">
+              <div class="swiper-wrapper">
+                  <!-- Slide 1 -->
+                  <div class="swiper-slide bg-white p-8 rounded-lg shadow-lg">
+                      <p class="text-lg text-gray-700 mb-4">
+                          "Дуже вдячні за професіоналізм і увагу до нашої дитини! Програма була цікавою та корисною, дитина отримала багато нових знань і навичок."
+                      </p>
+                      <p class="font-semibold text-green-600">Олена Іванова</p>
+                      <p class="text-gray-500">Мати 8-річного хлопчика</p>
+                  </div>
+
+                  <!-- Slide 2 -->
+                  <div class="swiper-slide bg-white p-8 rounded-lg shadow-lg">
+                      <p class="text-lg text-gray-700 mb-4">
+                          "Ми дуже задоволені! Дитина почала розвиватися в нових напрямках, а заняття були завжди захоплюючими. Рекомендуємо!"
+                      </p>
+                      <p class="font-semibold text-green-600">Ігор Сидоров</p>
+                      <p class="text-gray-500">Батько 7-річної дівчинки</p>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="swiper-slide bg-white p-8 rounded-lg shadow-lg">
+                      <p class="text-lg text-gray-700 mb-4">
+                          "Чудова команда! Програма адаптована під кожного учня, індивідуальний підхід до кожного - це величезний плюс!"
+                      </p>
+                      <p class="font-semibold text-green-600">Марина Коваль</p>
+                      <p class="text-gray-500">Мати 6-річного хлопчика</p>
+                  </div>
+
+                  <!-- Slide 4 -->
+                  <div class="swiper-slide bg-white p-8 rounded-lg shadow-lg">
+                      <p class="text-lg text-gray-700 mb-4">
+                          "Дуже вдячні за цікавий підхід до навчання! Заняття завжди цікаві та різноманітні. Дитина ходить з радістю!"
+                      </p>
+                      <p class="font-semibold text-green-600">Тетяна Гончар</p>
+                      <p class="text-gray-500">Мати 9-річної дівчинки</p>
+                  </div>
+              </div>
+
+              <!-- Swiper Navigation -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+      </div>
+    </section>
+
+  
+
+
+  <section id="contacts" class="py-20 bg-white text-black" data-aos="fade-up" data-aos-duration="800">  
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up" data-aos-duration="800">
+            У вас ще залишились запитання? Заповніть, будь ласка, форму і ми з вами звʼяжемось
+        </h2>
+
+        <!-- Contact Form Section -->
+        <div class="mt-12">
+            <form action="#" method="POST" class="max-w-3xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Ім'я</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                    </div>
+                    <!-- Phone -->
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-semibold mb-2">Телефон</label>
+                        <input type="tel" id="phone" name="phone" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <!-- Child's Age -->
+                    <div>
+                        <label for="child-age" class="block text-gray-700 font-semibold mb-2">Вік дитини</label>
+                        <input type="number" id="child-age" name="child-age" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                    </div>
+                    <!-- Child's Name -->
+                    <div>
+                        <label for="child-name" class="block text-gray-700 font-semibold mb-2">Ім'я дитини</label>
+                        <input type="text" id="child-name" name="child-name" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <label for="question" class="block text-gray-700 font-semibold mb-2">Можете попередньо сформулювати питання</label>
+                    <textarea id="question" name="question" rows="6" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required></textarea>
+                </div>
+
+                <!-- Privacy Policy Checkbox -->
+                <div class="mt-6 flex items-center">
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" class="w-5 h-5 text-green-600 border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                    <label for="privacy-policy" class="ml-2 text-gray-700">
+                        Я погоджуюсь з <a href="/privacy-policy" class="text-green-600 hover:text-green-800">Політикою конфіденційності</a>
+                    </label>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-green-800 transition">
+                        Відправити
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Про нас</h3>
+                <p class="text-gray-400">
+                    KIDS' UNI — це місце, де кожна дитина отримує підтримку, турботу та якісну освіту для гармонійного розвитку.
+                </p>
+                <a href="#about" class="inline-block mt-4 text-green-500 hover:text-green-400">
+                    Дізнатися більше →
+                </a>
+            </div>
+            <!-- Navigation -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Навігація</h3>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="text-gray-400 hover:text-white">Про нас</a></li>
+                    <li><a href="#programs" class="text-gray-400 hover:text-white">Програми</a></li>
+                    <li><a href="#advantages" class="text-gray-400 hover:text-white">Переваги</a></li>
+                    <li><a href="#faq" class="text-gray-400 hover:text-white">Питання та відповіді</a></li>
+                    <li><a href="#contacts" class="text-gray-400 hover:text-white">Контакти</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Контакти</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><i class="fas fa-map-marker-alt text-green-500 mr-2"></i> вул. Прикладна, 123, Київ</li>
+                    <li><i class="fas fa-phone text-green-500 mr-2"></i> +380 50 123 45 67</li>
+                    <li><i class="fas fa-envelope text-green-500 mr-2"></i> info@kidsuni.com</li>
+                </ul>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500">
+            <p>&copy; 2024 KIDS' UNI. Усі права захищені.</p>
+        </div>
+    </div>
+  </footer>
 
 
     <!-- Scripts -->
+     <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+      <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true, // Карусель буде безкінечно прокручуватись
+            slidesPerView: 1, // Один слайд за раз
+            spaceBetween: 20, // Проміжок між слайдами
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2, // Для великих екранів показувати два слайди
+                },
+                1024: {
+                    slidesPerView: 3, // Для ще більших екранів — три слайди
+                }
+            }
+        });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="main.js"></script>
     <script>
         AOS.init({
             duration: 1000,
             easing: 'ease-in-out',
             once: true
-        });
+        })
+    </script>
+    <script>
+      // Мобільне меню
+    const menuToggle = document.getElementById('menu-toggle');  // Використовуємо getElementById замість getElementsById
+    const mobMenu = document.getElementById('mobile-menu');     // Використовуємо getElementById
 
-        // Mobile Menu Toggle
-        document.getElementById('menu-toggle').addEventListener('click', () => {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+    menuToggle.addEventListener('click', () => {
+      mobMenu.classList.toggle('hidden');  // Додаємо/видаляємо клас 'hidden' для показу/приховування меню
+    });
+
     </script>
 </body>
 </html>
