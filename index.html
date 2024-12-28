@@ -568,24 +568,17 @@
 
     <!-- Initialize Swiper -->
     <script>
-        const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1, // Display one slide at a time
-            spaceBetween: 20, // Space between slides
-            loop: true, // Loop the slides
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,  // Default for larger screens (show 3 slides at a time)
+            spaceBetween: 20,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                // Adjust for larger screens
-                640: {
-                    slidesPerView: 2, // Show 2 slides on small screens
-                },
                 768: {
-                    slidesPerView: 3, // Show 3 slides on medium screens
-                },
-                1024: {
-                    slidesPerView: 3, // Show 3 slides on larger screens
+                    slidesPerView: 1,  // Show only 1 slide on mobile
+                    spaceBetween: 10,  // Smaller space between slides on mobile
                 },
             },
         });
