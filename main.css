@@ -57,3 +57,13 @@ section {
 #menu-toggle.active svg {
     transform: rotate(90deg);
 }
+
+@media (max-width: 640px) {
+    .swiper-container {
+      overflow-x: hidden; /* Приховати горизонтальний скролл */
+    }
+    .swiper-wrapper {
+      display: flex; /* Зберігаємо елементи у рядку */
+      flex-wrap: nowrap; /* Забезпечуємо, щоб елементи не обтікали */
+    }
+  }
