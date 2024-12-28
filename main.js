@@ -1,10 +1,10 @@
-// Мобільне меню
-const menuToggle = document.getElementById('menu-toggle');  // Використовуємо getElementById замість getElementsById
-const mobMenu = document.getElementById('mobile-menu');     // Використовуємо getElementById
+const menuToggle = document.getElementById('menu-toggle');
+    const mobMenu = document.getElementById('mobile-menu');
 
-menuToggle.addEventListener('click', () => {
-  mobMenu.classList.toggle('hidden');  // Додаємо/видаляємо клас 'hidden' для показу/приховування меню
-});
+    menuToggle.addEventListener('click', () => {
+        mobMenu.classList.toggle('hidden');  // Toggle the 'hidden' class to show/hide the mobile menu
+        mobMenu.classList.toggle('translate-y-[-100%]'); // Adds smooth sliding animation
+    });
 
 
 // const myNav = document.getElementById('nav');
