@@ -16,11 +16,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- AOS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- Swiper CSS -->
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 
     <!-- Custom Styles -->
      <link rel="stylesheet" href="main.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <style>
         body {
             font-family: "Montserrat", sans-serif;
@@ -397,118 +399,110 @@
             </div>
         </div>
     </section>
+      
+      <!-- swiper -->
+      
+        <!-- Відгуки Section -->
+    <section id="відгуки" class="py-10" data-aos="fade-up" style="margin-top: 10%;">
+        <div class="container mx-auto px-4">
+        <h2 class="flex justify-center text-4xl font-extrabold" style="color: #00A651; margin-bottom: 8px;" data-aos="fade-up">
+            Відгуки
+        </h2>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper no-select">
+            <!-- Відгук 1 -->
+            <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg" style="background-color: #00A651;">
+                <h3 class="text-xl font-bold" style="color: #FFFF;">інна, Чернувці</h3> 
+                <p class="mt-4" style="color: #FFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna at libero dictum elementum. Phasellus nec iaculis justo. Donec ut dolor orci.</p>
+            </div>
+    
+            <!-- Відгук 2 -->
+            <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg" style="background-color: #00A651;">
+                <h3 class="text-xl font-bold" style="color: #FFFF;">інна, Чернувці</h3> 
+                <p class="mt-4" style="color: #FFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna at libero dictum elementum. Phasellus nec iaculis justo. Donec ut dolor orci.</p>
+            </div>
+    
+            <!-- Відгук 3 -->
+            <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg" style="background-color: #00A651;">
+                <h3 class="text-xl font-bold" style="color: #FFFF;">інна, Чернувці</h3> 
+                <p class="mt-4" style="color: #FFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna at libero dictum elementum. Phasellus nec iaculis justo. Donec ut dolor orci.</p>
+            </div>
+    
+            <!-- Додаткові відгуки тут... -->
+            <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg" style="background-color: #00A651;">
+                <h3 class="text-xl font-bold" style="color: #FFFF;">інна, Чернувці</h3> 
+                <p class="mt-4" style="color: #FFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna at libero dictum elementum. Phasellus nec iaculis justo. Donec ut dolor orci.</p>
+            </div>
+            <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg" style="background-color: #00A651;">
+                <h3 class="text-xl font-bold" style="color: #FFFF;">інна, Чернувці</h3> 
+                <p class="mt-4" style="color: #FFF;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna at libero dictum elementum. Phasellus nec iaculis justo. Donec ut dolor orci.</p>
+            </div>
+            </div>
+    
+            <!-- Навігація слайдера -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next" style="margin-right: 5%;"></div>
+            <div class="swiper-button-prev" style="margin-left: 5%;"></div>
+        </div>
+        </div>
+    </section>     
 
-
-    <section id="testimonials" class="py-20 bg-gray-100 text-black" data-aos="fade-up" data-aos-duration="800">
+    <section id="contacts" class="py-20 bg-white text-black" data-aos="fade-up" data-aos-duration="800">  
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up" data-aos-duration="800">
-                Відгуки наших клієнтів
+                У вас ще залишились запитання? Заповніть, будь ласка, форму і ми з вами звʼяжемось
             </h2>
-    
-            <!-- Swiper Container -->
-            <div class="swiper-container" data-aos="fade-up" data-aos-duration="900">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide bg-white p-8 rounded-lg shadow-lg">
-                        <p class="text-lg text-gray-700 mb-4">
-                            "Дуже вдячні за професіоналізм і увагу до нашої дитини! Програма була цікавою та корисною, дитина отримала багато нових знань і навичок."
-                        </p>
-                        <p class="font-semibold text-green-600">Олена Іванова</p>
-                        <p class="text-gray-500">Мати 8-річного хлопчика</p>
+
+            <!-- Contact Form Section -->
+            <div class="mt-12">
+                <form action="#" method="POST" class="max-w-3xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Ім'я</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                        </div>
+                        <!-- Phone -->
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-semibold mb-2">Телефон</label>
+                            <input type="tel" id="phone" name="phone" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                        </div>
                     </div>
-    
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide bg-white p-8 rounded-lg shadow-lg">
-                        <p class="text-lg text-gray-700 mb-4">
-                            "Ми дуже задоволені! Дитина почала розвиватися в нових напрямках, а заняття були завжди захоплюючими. Рекомендуємо!"
-                        </p>
-                        <p class="font-semibold text-green-600">Ігор Сидоров</p>
-                        <p class="text-gray-500">Батько 7-річної дівчинки</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                        <!-- Child's Age -->
+                        <div>
+                            <label for="child-age" class="block text-gray-700 font-semibold mb-2">Вік дитини</label>
+                            <input type="number" id="child-age" name="child-age" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                        </div>
+                        <!-- Child's Name -->
+                        <div>
+                            <label for="child-name" class="block text-gray-700 font-semibold mb-2">Ім'я дитини</label>
+                            <input type="text" id="child-name" name="child-name" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                        </div>
                     </div>
-    
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide bg-white p-8 rounded-lg shadow-lg">
-                        <p class="text-lg text-gray-700 mb-4">
-                            "Чудова команда! Програма адаптована під кожного учня, індивідуальний підхід до кожного - це величезний плюс!"
-                        </p>
-                        <p class="font-semibold text-green-600">Марина Коваль</p>
-                        <p class="text-gray-500">Мати 6-річного хлопчика</p>
+                    <div class="mt-6">
+                        <label for="question" class="block text-gray-700 font-semibold mb-2">Можете попередньо сформулювати питання</label>
+                        <textarea id="question" name="question" rows="6" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required></textarea>
                     </div>
-    
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide bg-white p-8 rounded-lg shadow-lg">
-                        <p class="text-lg text-gray-700 mb-4">
-                            "Дуже вдячні за цікавий підхід до навчання! Заняття завжди цікаві та різноманітні. Дитина ходить з радістю!"
-                        </p>
-                        <p class="font-semibold text-green-600">Тетяна Гончар</p>
-                        <p class="text-gray-500">Мати 9-річної дівчинки</p>
+
+                    <!-- Privacy Policy Checkbox -->
+                    <div class="mt-6 flex items-center">
+                        <input type="checkbox" id="privacy-policy" name="privacy-policy" class="w-5 h-5 text-green-600 border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-600" required>
+                        <label for="privacy-policy" class="ml-2 text-gray-700">
+                            Я погоджуюсь з <a href="/privacy-policy" class="text-green-600 hover:text-green-800">Політикою конфіденційності</a>
+                        </label>
                     </div>
-                </div>
-    
-                <!-- Swiper Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+
+                    <div class="mt-6 text-center">
+                        <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-green-800 transition">
+                            Відправити
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>
-  
-
-
-  <section id="contacts" class="py-20 bg-white text-black" data-aos="fade-up" data-aos-duration="800">  
-    <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up" data-aos-duration="800">
-            У вас ще залишились запитання? Заповніть, будь ласка, форму і ми з вами звʼяжемось
-        </h2>
-
-        <!-- Contact Form Section -->
-        <div class="mt-12">
-            <form action="#" method="POST" class="max-w-3xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Name -->
-                    <div>
-                        <label for="name" class="block text-gray-700 font-semibold mb-2">Ім'я</label>
-                        <input type="text" id="name" name="name" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
-                    </div>
-                    <!-- Phone -->
-                    <div>
-                        <label for="phone" class="block text-gray-700 font-semibold mb-2">Телефон</label>
-                        <input type="tel" id="phone" name="phone" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                    <!-- Child's Age -->
-                    <div>
-                        <label for="child-age" class="block text-gray-700 font-semibold mb-2">Вік дитини</label>
-                        <input type="number" id="child-age" name="child-age" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
-                    </div>
-                    <!-- Child's Name -->
-                    <div>
-                        <label for="child-name" class="block text-gray-700 font-semibold mb-2">Ім'я дитини</label>
-                        <input type="text" id="child-name" name="child-name" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required>
-                    </div>
-                </div>
-                <div class="mt-6">
-                    <label for="question" class="block text-gray-700 font-semibold mb-2">Можете попередньо сформулювати питання</label>
-                    <textarea id="question" name="question" rows="6" class="w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600" required></textarea>
-                </div>
-
-                <!-- Privacy Policy Checkbox -->
-                <div class="mt-6 flex items-center">
-                    <input type="checkbox" id="privacy-policy" name="privacy-policy" class="w-5 h-5 text-green-600 border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-600" required>
-                    <label for="privacy-policy" class="ml-2 text-gray-700">
-                        Я погоджуюсь з <a href="/privacy-policy" class="text-green-600 hover:text-green-800">Політикою конфіденційності</a>
-                    </label>
-                </div>
-
-                <div class="mt-6 text-center">
-                    <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-green-800 transition">
-                        Відправити
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
 
 
 
@@ -562,28 +556,36 @@
   </footer>
 
 
-    <!-- Scripts -->
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!-- Swiper JS -->
+     <!-- Підключення Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,  // Default for larger screens (show 3 slides at a time)
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
             },
-            breakpoints: {
-                768: {
-                    slidesPerView: 1,  // Show only 1 slide on mobile
-                    spaceBetween: 10,  // Smaller space between slides on mobile
-                },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
             },
+          },
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="main.js"></script>
     <script>
         AOS.init({
