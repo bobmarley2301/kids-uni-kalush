@@ -12,6 +12,8 @@ menuToggle.addEventListener("click", () => {
   }
 });
 
+
+
 // Функція для акордеона (відкриття/закриття елементів)
 function toggleAccordion(button) {
   const content = button.nextElementSibling;
